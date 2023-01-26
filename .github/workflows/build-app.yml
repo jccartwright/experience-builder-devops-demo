@@ -31,7 +31,12 @@ jobs:
         run: npm ci
         working-directory: arcgis-experience-builder-1.9/ArcGISExperienceBuilder/server
       - name: install any widget dependencies
-        run: for d in *; do cd $d; if test -f package.json; then echo "installing dependencies for `pwd`..."; npm i; fi; cd ..; done
+        run: |
+          for d in `find . -type d -depth 1`; do 
+          cd $d
+          if test -f package.json; then echo "installing dependencies for `pwd`..." && npm i; fi
+          cd ..
+          done
       - name: Build widgets
         run: npm run build:dev
         working-directory: arcgis-experience-builder-1.9/ArcGISExperienceBuilder/client
