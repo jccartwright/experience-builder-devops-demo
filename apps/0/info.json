@@ -1,0 +1,21 @@
+{
+  "created": 1674690611198,
+  "description": "",
+  "id": "9",
+  "modified": 1674690926436,
+  "owner": "ncei_noaa",
+  "tags": [],
+  "thumbnail": null,
+  "title": "DevOps Demo",
+  "type": "Web Experience",
+  "snippet": "",
+  "typeKeywords": [
+    "EXB Experience",
+    "Ready To Use",
+    "JavaScript",
+    "status: Draft",
+    "version:1.9.0"
+  ],
+  "portalUrl": "https://noaa.maps.arcgis.com",
+  "username": "ncei_noaa"
+}
